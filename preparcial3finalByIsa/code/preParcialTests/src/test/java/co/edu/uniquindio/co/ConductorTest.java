@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ConductorTest {
+class ConductorTests {
 
 
     private Conductor conductor;
