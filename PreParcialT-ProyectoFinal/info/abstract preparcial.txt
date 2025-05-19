@@ -1,0 +1,45 @@
+=>1.que se solicita?
+
+Se requiere desarrollar un programa que modele un sistema de peaje.
+
+=>2.que información es relevante??
+
+Las estaciones de peaje tienen un nombre, departamento en el que están ubicadas y un valor numérico que representa el valor total de peaje recolectado
+Los vehículos que llegan a un peaje tienen una placa, el número de peajes que ha pagado, y una capacidad de carga en toneladas (aplicable solo para camiones).
+El sistema cobra diferentes tarifas de peaje dependiendo del tipo de vehículo y de condiciones adicionales:
+Carro: el valor base del peaje es de $10,000, pero si es un carro eléctrico, se aplica un descuento del 20%. Además, si es un vehículo de servicio público, el valor del peaje se incrementa en un 15%.
+Moto: el valor base del peaje es de $5,000, pero si la moto tiene un cilindraje mayor a 200 cc, se aplica un recargo adicional de $2,000.
+Camión: el valor del peaje depende de los ejes y la carga. Se cobra un valor base de $7,000 por eje. Si la capacidad de carga del camión supera las 10 toneladas, se aplica un recargo del 10% sobre el total calculado por eje.
+
+=>3.como se agrupa la información relevante?
+
+vehiculos:camion,moto,carro.
+
+vehiculo:placa,numeros de peajes que ha pagado
+
+camión:Carga,ejes,boolean Electrico,Boolean Publico.
+
+moto:cilindraje.
+
+Peaje:  nombre, departamento,valor total.
+
+persona:nombre,apellidos,id,fechaNacimiento
+
+conductor:lista de vehículos asignados.
+
+recaudador:sueldo mensual.
+
+codificación:
+reconocimiento de patrones:no aplica
+
+=>4.Que funcionalidades se solicitan:}
+Asignar un vehículo a una persona, permitiendo que una persona tenga múltiples vehículos de diferentes tipos.
+Imprimir en pantalla un listado de los vehículos que llegaron al peaje, el tipo de vehículo, el cálculo detallado de cada peaje y el total acumulado.
+Se requiere implementar un método en Vehiculo que retorne una cadena descriptiva con la información del vehículo, incluyendo tipo, placa y detalles particulares como cilindraje o número de ejes y capacidad de carga. Esta descripción se usará para generar reportes de control.
+Consultar el total de dinero pagado en peajes por cada vehículo que una persona tiene asignado, detallando el cálculo realizado.
+Devolver una lista de vehículos de un conductor que coincidan con un tipo específico ("Carro", "Moto", "Camion").
+Calcular el valor del peaje de un vehículo X, actualiza el valor total recaudado y guarda el registro del paso del vehículo.
+Busca un recaudador por nombre completo (nombre + apellidos) ignorando mayúsculas y espacios adicionales.
+La gerencia requiere identificar los conductores que tienen al menos un camión con capacidad de carga mayor a 10 toneladas. Se debe implementar un método que devuelva una lista con estos conductores, permitiendo tomar decisiones sobre tarifas o restricciones de circulación para vehículos de alto tonelaje
+
+=>5.como se escribe la solución en java
